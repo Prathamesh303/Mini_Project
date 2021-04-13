@@ -7,7 +7,7 @@ subject s[100];
 int count=0;
 void init_subjects()
 {
-    char *fileName = "C:\\Users\\JYOTSNA\\Mini\\Subject.txt";
+    char *fileName = "C:\\Users\\JYOTSNA\\MINI_PROJECT\\Subject.txt";
 ReadFile(fileName);
 }
 void ReadFile(char *fileName)
@@ -29,8 +29,18 @@ void ReadFile(char *fileName)
 
     fclose(filePtr);
 }
-void init_branch(ETRX E ,CS C,IT I,EXTC ET)
+
+subject getdetails(int id)
 {
-    printf("%s %d %d %s \n",C.name,C.id,C.floor,C.hod);
+    subject d={"",0,0,0};
+    for(int i=0;i<count;i++)
+    {
+        if(s[i].sid==id)
+        {
+            return s[i];
+        }
+    }
+    return d;
 }
+
  

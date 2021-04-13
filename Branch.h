@@ -36,8 +36,22 @@ typedef struct subject
     int did;
 int pid;
 }subject;
+typedef struct professor
+{
+    char name[100];
+    char degree[50];
+ int did;
+int pid;
+
+}professor;
+
 void init_subjects();
 void ReadFile(char *fileName);
-void init_branch(ETRX E ,CS C,IT I,EXTC ET);
+subject getdetails(int id);
 
+void init_professors();
+void ReadFile1(char *fileName);
+professor getdetailsprof(int id);
+
+void info(char dept[100]);
 #endif
