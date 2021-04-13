@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 
 # Requirements
 ## Introduction
@@ -11,7 +9,7 @@ In the college management system easy access of the details of course enrollment
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![Untitled Workspace](https://user-images.githubusercontent.com/80693368/114503047-53a88c80-9c4a-11eb-98e3-9c38b8966a3c.png)
 
 # 4W&#39;s and 1&#39;H
 
@@ -60,6 +58,5 @@ In the college management system easy access of the details of course enrollment
 |9|Test cases for committe information|Not yet implemented|
 |10|Implementation testing|Not yet implemented
 =======
-![Untitled Workspace](https://user-images.githubusercontent.com/80693368/114503047-53a88c80-9c4a-11eb-98e3-9c38b8966a3c.png)
-cdtrgyu
->>>>>>> 010c79676c25c03e56f907bad97470c9af7ee34e
+
+
