@@ -6,64 +6,20 @@
  * @brief 
  * 
  */
-ETRX E={"Electronics",1,3,"DC"};
-EXTC ET={"Electronics and Telecommunication",2,5,"YS"};
-IT I={"Information Technology",4,4,"DK"};
-CS C={"Computer Science",3,6,"NK"};
 
-void info(char department[100])
+
+void init()
 {
-    int subid;
-    if(strcmp(department,E.name)==0)
-          {
-             printf("Enter the Subject Id: \n");
-             scanf("%d",&subid);
-             subject details=getdetails(subid);
-             if(details.sid==0)
-             {
-                printf("Invalid Subject Id \n");
-             //   return =-1
-             }
-             else
-             {
-                printf("For Professor Details Enter Y: \n");
-                char t[4];
-                scanf("%s",t);
-                if(strcmp(t,"yes")==0)
-                {
-                  // Professor p= getprofdetails(details.pfid);
-                   printf("PROFESSOR DETAILS: \n");
-                }
-                printf("SUBJECT DETAILS: \n");
-             printf("Subject Name:%s Subject ID:%d Department Name:%s Department ID:%d \n",details.name,details.sid,E.name,details.did);
-             }
-             
-            
-          }
-          else if(strcmp(department,C.name)==0)
-          {
+    init_subjects();
+    init_professors();
 
-          }   
-          else if(strcmp(department,ET.name)==0)
-          {
-
-          }
-          else if(strcmp(department,I.name)==0)
-          {
-
-          }
-          else
-          {
-              printf("--------------------Please Enter Valid Department  Name---------------- \n");
-          }
-printf("\n");
 }
 
 int main()
 {
     int choice,i=1;
     char department[100];
-    init_subjects();
+     init();
     while(i>0)
     {
         printf("Enter 1 For Course Details :\n");
@@ -81,7 +37,34 @@ int main()
         }
         else if(choice==2)
         {
-
+            int roomn;
+           printf("Enter the Room Number:\n");
+           scanf("%d",&roomn);
+           room details=getdetailsroom(roomn);
+           if(details.room_num==0)
+           {
+               printf("INVALID ROOM NUMBER! \n");
+           }
+           else
+           {
+               if(details.booked==1)
+               {
+                   printf("ROOM is already booked by %s \n",details.booked_by);
+                   printf("Select another Room \n");
+                   room nb[100];
+                   int k;
+                   notbooked(&nb,&k);
+                   printf("List of Room which are not booked: \n");
+                   for(int i=0;i<k;i++)
+                   {
+                       printf("Floor:%d Room Number: %d \n",nb[i].floor,nb[i].room_num);
+                   }
+               }
+               else
+               {
+                   booking(roomn);
+               }
+           }
         }
         else if(choice==3)
         {

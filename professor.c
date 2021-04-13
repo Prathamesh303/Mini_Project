@@ -4,7 +4,7 @@
 #include <string.h>
 
 professor p[100];
-int count=0;
+int count1=0;
 void init_professors()
 {
     char *fileName = "C:\\Users\\JYOTSNA\\MINI_PROJECT\\Professor.txt";
@@ -22,9 +22,10 @@ void ReadFile1(char *fileName)
        // return -1;
     }
 
-    while (fscanf(filePtr, "%s%s%d%d", p[count].name,p[count].degree, &p[count].did,&p[count].pid) != EOF)
+    while (fscanf(filePtr, "%s%s%d%d", p[count1].name,p[count1].degree, &p[count1].pid,&p[count1].did) != EOF)
     {
-        count++;
+         
+        count1++;
     }
 
     fclose(filePtr);
@@ -32,15 +33,15 @@ void ReadFile1(char *fileName)
 
 professor getdetailsprof(int id)
 {
-    professor d={"","",0,0};
-    for(int i=0;i<count;i++)
+    professor d1={"","",0,0};
+    for(int i=0;i<count1;i++)
     {
         if(p[i].pid==id)
         {
             return p[i];
         }
     }
-    return d;
+    return d1;
 }
 
  

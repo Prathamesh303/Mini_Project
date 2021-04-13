@@ -40,11 +40,20 @@ typedef struct professor
 {
     char name[100];
     char degree[50];
+    int pid;
  int did;
-int pid;
+
 
 }professor;
 
+typedef struct room
+{
+    int floor;
+    int room_num;
+    int booked;
+    char booked_by[100];
+}room;
+void init();
 void init_subjects();
 void ReadFile(char *fileName);
 subject getdetails(int id);
