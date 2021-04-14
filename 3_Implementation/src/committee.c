@@ -7,7 +7,7 @@ committee c[100];
 int counter=0;
 void init_committee()
 {
-    char *fileName = "C:\\Users\\JYOTSNA\\MINI_PROJECT\\Committee.txt";
+    char *fileName = "Committee.txt";
 ReadFile_committee(fileName);
 }
 void ReadFile_committee(char *fileName)

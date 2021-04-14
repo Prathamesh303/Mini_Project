@@ -7,10 +7,10 @@ subject s[100];
 int count=0;
 void init_subjects()
 {
-    char *fileName = "C:\\Users\\JYOTSNA\\MINI_PROJECT\\Subject.txt";
+    char *fileName = "Subject.txt";
 ReadFile(fileName);
 }
-void ReadFile(char *fileName)
+void ReadFile(char *fileName)s
 {
     FILE *filePtr ;
     filePtr= fopen(fileName, "r");

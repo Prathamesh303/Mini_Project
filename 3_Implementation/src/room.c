@@ -6,7 +6,7 @@ room r[100];
 int count3=0;
 void init_rooms()
 {
-char *fileName = "C:\\Users\\JYOTSNA\\MINI_PROJECT\\Room.txt";
+char *fileName = "Room.txt";
 ReadFile_rooms(fileName);
 }
 

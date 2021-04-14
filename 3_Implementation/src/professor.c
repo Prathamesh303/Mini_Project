@@ -7,7 +7,7 @@ professor p[100];
 int count1=0;
 void init_professors()
 {
-    char *fileName = "C:\\Users\\JYOTSNA\\MINI_PROJECT\\Professor.txt";
+    char *fileName = "Professor.txt";
 ReadFile1(fileName);
 }
 void ReadFile1(char *fileName)
