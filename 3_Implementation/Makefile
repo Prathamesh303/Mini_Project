@@ -1,8 +1,8 @@
 PROJ_NAME = college_management
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-SRC =src/Committee.c \
-src/ info.c\
+SRC =src/committee.c \
+src/info.c\
 src/subject.c \
 src/professor.c \
 src/room.c \

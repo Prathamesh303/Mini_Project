@@ -10,7 +10,7 @@ void init_subjects()
     char *fileName = "Subject.txt";
 ReadFile(fileName);
 }
-void ReadFile(char *fileName)s
+void ReadFile(char *fileName)
 {
     FILE *filePtr ;
     filePtr= fopen(fileName, "r");
