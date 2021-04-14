@@ -16,7 +16,7 @@ void init()
     init_subjects();
     init_professors();
     init_rooms();
-
+    init_committee();
 }
 
 int main()
@@ -33,15 +33,18 @@ int main()
         scanf("%d",&choice);
         if(choice==1)
         {
-          printf("Enter the Department Name: \n");
-          scanf("%s",department);
-           info(department);
-          
+            printf("------------------------------------------------------------------------------------------ \n");
+            printf("Enter the Department Name: \n");
+            scanf("%s",department);
+            info(department);
+            printf("------------------------------------------------------------------------------------------ \n");
+
           
         }
         else if(choice==2)
         {
             int roomn;
+            printf("------------------------------------------------------------------------------------------ \n");
            printf("Enter the Room Number:\n");
            scanf("%d",&roomn);
            room details=getdetailsroom(roomn);
@@ -63,7 +66,7 @@ int main()
                    {
                        printf("Floor:%d Room Number: %d \n",nb[i].floor,nb[i].room_num);
                    }
-                   printf("\n");
+                  
                }
                else
                {char book[100];
@@ -74,9 +77,26 @@ int main()
                    printf("\n");
                }
            }
+            printf("------------------------------------------------------------------------------------------ \n");
+
         }
         else if(choice==3)
         {
+            printf("------------------------------------------------------------------------------------------ \n");
+            int id;
+            printf("Enter the Committee Id: \n");
+            scanf("%d",&id);
+            committee details=getdetailscommittee(id);
+            if(details.cid==0)
+            {
+                printf("Invalid Committee ! \n");
+            }
+            else
+            {
+                printf("Committe Name: %s Committee Id: %d Committee Chair Person: %s \n",details.name,details.cid,details.cpname);
+            }
+            printf("------------------------------------------------------------------------------------------ \n");
+
 
         }
         else if(choice==0)

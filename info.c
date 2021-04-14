@@ -33,11 +33,11 @@ void info(char department[100])
                 {
                    professor p1= getdetailsprof(details.pid);
                    printf("PROFESSOR DETAILS: \n");
-                   printf("Professor Name:%s Professor ID:%d Professor Degree:%s  \n",p1.name,p1.pid,p1.degree);
+                   printf("Professor Name: %s Professor ID: %d Professor Degree: %s  \n",p1.name,p1.pid,p1.degree);
                 printf("\n");
                 }
                 printf("SUBJECT DETAILS: \n");
-             printf("Subject Name:%s Subject ID:%d Department Name:ELECTRONICS(%s) Department ID:%d \n",details.name,details.sid,E.name,details.did);
+             printf("Subject Name: %s Subject ID: %d Department Name:ELECTRONICS(%s) Department ID: %d \n",details.name,details.sid,E.name,details.did);
              }
              
             
@@ -66,11 +66,11 @@ void info(char department[100])
                 {
                    professor p1= getdetailsprof(details.pid);
                    printf("PROFESSOR DETAILS: \n");
-                   printf("Professor Name:%s Professor ID:%d Professor Degree:%s  \n",p1.name,p1.pid,p1.degree);
+                   printf("Professor Name: %s Professor ID: %d Professor Degree: %s  \n",p1.name,p1.pid,p1.degree);
                 printf("\n");
                 }
                 printf("SUBJECT DETAILS: \n");
-             printf("Subject Name:%s Subject ID:%d Department Name:COMPUTER SCIENCE(%s) Department ID:%d \n",details.name,details.sid,E.name,details.did);
+             printf("Subject Name: %s Subject ID: %d Department Name:COMPUTER SCIENCE(%s) Department ID: %d \n",details.name,details.sid,E.name,details.did);
              }
           }   
           else if(strcmp(department,ET.name)==0)
@@ -96,11 +96,11 @@ void info(char department[100])
                 {
                    professor p1= getdetailsprof(details.pid);
                    printf("PROFESSOR DETAILS: \n");
-                   printf("Professor Name:%s Professor ID:%d Professor Degree:%s  \n",p1.name,p1.pid,p1.degree);
+                   printf("Professor Name: %s Professor ID: %d Professor Degree: %s  \n",p1.name,p1.pid,p1.degree);
                 printf("\n");
                 }
                 printf("SUBJECT DETAILS: \n");
-             printf("Subject Name:%s Subject ID:%d Department Name:ELECTRONICS & TELECOMMUNICATION(%s) Department ID:%d \n",details.name,details.sid,E.name,details.did);
+             printf("Subject Name: %s Subject ID: %d Department Name:ELECTRONICS & TELECOMMUNICATION(%s) Department ID: %d \n",details.name,details.sid,E.name,details.did);
              }
           }
           else if(strcmp(department,I.name)==0)
@@ -126,16 +126,16 @@ void info(char department[100])
                 {
                    professor p1= getdetailsprof(details.pid);
                    printf("PROFESSOR DETAILS: \n");
-                   printf("Professor Name:%s Professor ID:%d Professor Degree:%s  \n",p1.name,p1.pid,p1.degree);
+                   printf("Professor Name: %s Professor ID: %d Professor Degree: %s  \n",p1.name,p1.pid,p1.degree);
                 printf("\n");
                 }
                 printf("SUBJECT DETAILS: \n");
-             printf("Subject Name:%s Subject ID:%d Department Name:INFORMATION TECHNOLOGY(%s) Department ID:%d \n",details.name,details.sid,E.name,details.did);
-             }
+             printf("Subject Name: %s Subject ID: %d Department Name:INFORMATION TECHNOLOGY(%s) Department ID: %d \n",details.name,details.sid,E.name,details.did);
+             } 
           }
           else
           {
               printf("\n--------------------Please Enter Valid Department  Name---------------- \n");
           }
-printf("\n");
+
 }

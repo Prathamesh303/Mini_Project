@@ -53,6 +53,13 @@ typedef struct room
     int booked;
     char booked_by[100];
 }room;
+
+typedef struct committee
+{
+    char name[100];
+    int cid;
+    char cpname[100];
+}committee;
 void init();
 void init_subjects();
 void ReadFile(char *fileName);
@@ -70,5 +77,9 @@ room getdetailsroom(int roomn);
 void notbooked(room *nb,int *l);
 void booking(int roomn,char book1[100]);
 void write();
+
+committee getdetailscommittee(int id);
+void init_committee();
+void ReadFile_committee(char *fileName);
 
 #endif
