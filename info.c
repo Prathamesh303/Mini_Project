@@ -113,7 +113,7 @@ void info(char department[100])
                 printf("Invalid Subject Id \n");
              //   return =-1
              }
-              else if((subid%1000)!=IT.id)
+              else if((subid%1000)!= I.id)
              {
                  printf("---------WRONG DEPARTMENT !----------\n");
              }

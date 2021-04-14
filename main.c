@@ -7,11 +7,15 @@
  * 
  */
 
-
+/**
+ * @brief 
+ * 
+ */
 void init()
 {
     init_subjects();
     init_professors();
+    init_rooms();
 
 }
 
@@ -53,16 +57,21 @@ int main()
                    printf("Select another Room \n");
                    room nb[100];
                    int k;
-                   notbooked(&nb,&k);
+                   notbooked(nb,&k);
                    printf("List of Room which are not booked: \n");
                    for(int i=0;i<k;i++)
                    {
                        printf("Floor:%d Room Number: %d \n",nb[i].floor,nb[i].room_num);
                    }
+                   printf("\n");
                }
                else
-               {
-                   booking(roomn);
+               {char book[100];
+               printf("Please Enter the Name for booking: \n");
+                scanf("%s",book);
+                booking(roomn,book);
+                   printf("Room Booked !\n");
+                   printf("\n");
                }
            }
         }

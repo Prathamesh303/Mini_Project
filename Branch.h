@@ -63,4 +63,12 @@ void ReadFile1(char *fileName);
 professor getdetailsprof(int id);
 
 void info(char dept[100]);
+
+void init_rooms();
+void ReadFile_rooms(char *fileName);
+room getdetailsroom(int roomn);
+void notbooked(room *nb,int *l);
+void booking(int roomn,char book1[100]);
+void write();
+
 #endif
