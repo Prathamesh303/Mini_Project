@@ -70,7 +70,7 @@ void test_getdetails(void) {
 
 void test_getdetailscommittee(void) {
 
-  committee c1 =getdetailscommittee(10001)
+  committee c1 =getdetailscommittee(10001);
 
   TEST_ASSERT_EQUAL_STRING("ESA", c1.name );
   TEST_ASSERT_EQUAL(10001, c1.cid);
