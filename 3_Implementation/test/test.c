@@ -32,37 +32,49 @@ int main()
 
 /* Write all the test functions */ 
 void test_getdetailsroom(void) {
-  room d1={1,101, 1, "ESA"};
-  room d2={2 ,201 ,1 ,"ESA"};
-  TEST_ASSERT_EQUAL(d1, getdetailsroom(101));
-  TEST_ASSERT_EQUAL(d2, getdetailsroom(201));
+  
+  room d1=getdetailsroom(101);
+  TEST_ASSERT_EQUAL(1,d1.floor );
+  TEST_ASSERT_EQUAL(101, d1.room_num);
+  TEST_ASSERT_EQUAL(1, d1.booked);
+  TEST_ASSERT_EQUAL("ESA", d1.booked_by);
   
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(d1, getdetailsroom(401));
+  //TEST_ASSERT_EQUAL(d1, getdetailsroom(401));
 }
 
 void test_getdetailsprof(void) {
-  professor p1={"RGS" ,"Phd", 11, 1};
-  professor p2={"DKB" ,"Phd" ,31 ,3}
-  TEST_ASSERT_EQUAL(p1, getdetailsprof(11));
-  TEST_ASSERT_EQUAL(p2, getdetailsprof(31));
+  professor p1=getdetailsprof(11);
+  TEST_ASSERT_EQUAL("RGS",p1.name );
+  TEST_ASSERT_EQUAL("Phd",p1.degree );
+  TEST_ASSERT_EQUAL(11,p1.pid );
+  TEST_ASSERT_EQUAL(1,p1.did);
+  
  
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(p1, getdetailsprof(12));
+  //TEST_ASSERT_EQUAL(p1, getdetailsprof(12));
 }
 
 void test_getdetails(void) {
-  subject s1={"AE", 1001, 1, 1};
-  TEST_ASSERT_EQUAL(s1, getdetails(1001));
+  subject s1=getdetails(1001);
+
+
+  TEST_ASSERT_EQUAL("AE",s1.name );
+  TEST_ASSERT_EQUAL(1001,s1.sid );
+  TEST_ASSERT_EQUAL(1,s1.did );
+  TEST_ASSERT_EQUAL(1,s1.pid );
   
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(s1, getdetails(1002));
+ // TEST_ASSERT_EQUAL(s1, getdetails(1002));
 }
 
 void test_getdetailscommittee(void) {
-  committee c1={"ESA" ,10001 ,RGS};
-  TEST_ASSERT_EQUAL(c1, getdetailscommittee(10001));
-  
+
+  committee c1 =getdetailscommittee(10001)
+
+  TEST_ASSERT_EQUAL("ESA", c1.name );
+  TEST_ASSERT_EQUAL(10001, c1.cid);
+  TEST_ASSERT_EQUAL("RGS", c1.cpname);
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(c1, getdetailscommittee(10002));
+  //TEST_ASSERT_EQUAL(c1, getdetailscommittee(10002));
 }
