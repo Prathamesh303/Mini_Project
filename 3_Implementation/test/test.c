@@ -1,5 +1,5 @@
-#include "unity\unity.h"
-#include "inc\Branch.h"
+#include "unity.h"
+#include "Branch.h"
 
 /* Modify these two lines according to the project */
 #define PROJECT_NAME "College Management System"
@@ -32,7 +32,7 @@ int main()
 }
 
 /* Write all the test functions */ 
-void test_gratuity(void) {
+void test_(void) {
   TEST_ASSERT_EQUAL(10384, gratuity_calculation(3000,5,5,1));
   TEST_ASSERT_EQUAL(103846, gratuity_calculation(30000,5,5,1));
   TEST_ASSERT_EQUAL(1038461, gratuity_calculation(300000,5,5,1));
