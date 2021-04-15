@@ -42,8 +42,6 @@ typedef struct professor
     char degree[50];
     int pid;
  int did;
-
-
 }professor;
 
 typedef struct room

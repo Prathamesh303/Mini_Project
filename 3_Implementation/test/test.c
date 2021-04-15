@@ -34,6 +34,7 @@ int main()
 void test_getdetailsroom(void) {
   
   room d1=getdetailsroom(101);
+
   TEST_ASSERT_EQUAL(1,d1.floor );
   TEST_ASSERT_EQUAL(101, d1.room_num);
   TEST_ASSERT_EQUAL(1, d1.booked);
@@ -45,9 +46,10 @@ void test_getdetailsroom(void) {
 
 void test_getdetailsprof(void) {
   professor p1=getdetailsprof(11);
-  TEST_ASSERT_EQUAL_STRING("RGS",p1.name );
-  TEST_ASSERT_EQUAL_STRING("Phd",p1.degree );
-  TEST_ASSERT_EQUAL(11,p1.pid );
+
+  TEST_ASSERT_EQUAL_STRING("RGS",p1.name);
+  TEST_ASSERT_EQUAL_STRING("Phd",p1.degree);
+  TEST_ASSERT_EQUAL(11,p1.pid);
   TEST_ASSERT_EQUAL(1,p1.did);
   
  
@@ -72,7 +74,7 @@ void test_getdetailscommittee(void) {
 
   committee c1 =getdetailscommittee(10001);
 
-  TEST_ASSERT_EQUAL_STRING("ESA", c1.name );
+  TEST_ASSERT_EQUAL_STRING("ESA", c1.name);
   TEST_ASSERT_EQUAL(10001, c1.cid);
   TEST_ASSERT_EQUAL_STRING("RGS", c1.cpname);
   /* Dummy fail*/
