@@ -1,2 +1,3 @@
-RGS Phd 1 1
-SSR Phd 2 1
+RGS Phd 11 1
+SSR Phd 12 1
+DKB Phd 31 3

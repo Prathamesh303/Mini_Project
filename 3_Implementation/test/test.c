@@ -5,11 +5,10 @@
 #define PROJECT_NAME "College Management System"
 
 /* Prototypes for all the test functions */
-void test_gratuity(void);
-void test_fixed_deposit(void);
-void test_roi(void);
-void test_emi(void);
-
+void test_getdetailsroom(void);
+void test_getdetailsprof(void);
+void test_getdetails(void);
+void test_getdetailscommittee(void);
 /* Required by the unity test framework */
 void setUp(){}
 /* Required by the unity test framework */
@@ -22,45 +21,48 @@ int main()
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(test_gratuity);
-  RUN_TEST(test_fixed_deposit);
-  RUN_TEST(test_roi);
-  RUN_TEST(test_emi);
+  RUN_TEST(test_getdetailsroom);
+  RUN_TEST(test_getdetailsprof);
+  RUN_TEST(test_getdetails);
+  RUN_TEST(test_getdetailscommittee);
 
   /* Close the Unity Test Framework */
   return UNITY_END();
 }
 
 /* Write all the test functions */ 
-void test_(void) {
-  TEST_ASSERT_EQUAL(10384, gratuity_calculation(3000,5,5,1));
-  TEST_ASSERT_EQUAL(103846, gratuity_calculation(30000,5,5,1));
-  TEST_ASSERT_EQUAL(1038461, gratuity_calculation(300000,5,5,1));
-  TEST_ASSERT_EQUAL(10384616, gratuity_calculation(3000000,5,5,1));
-  TEST_ASSERT_EQUAL(0, gratuity_calculation(0,5,5,1));
-  /* Dummy fail*/
-  //TEST_ASSERT_EQUAL(15000, gratuity_calculation(30000,5,5,1));
-}
-
-void test_fixed_deposit(void) {
-  TEST_ASSERT_EQUAL(121306, fixed_deposit(100000,3,6.65));
-  TEST_ASSERT_EQUAL(0, fixed_deposit(0,3,6.65));
-  TEST_ASSERT_EQUAL(2593743, fixed_deposit(1000000,10,10));
+void test_getdetailsroom(void) {
+  room d1={1 101 1 "ESA"};
+  room d2={2 201 1 "ESA"};
+  TEST_ASSERT_EQUAL(d1, getdetailsroom(101));
+  TEST_ASSERT_EQUAL(d2, getdetailsroom(201));
   
   /* Dummy fail*/
-  //TEST_ASSERT_EQUAL(100, fixed_deposit(100000,3,6.65));
+  TEST_ASSERT_EQUAL(d1, getdetailsroom(401));
 }
 
-void test_roi(void) {
-  TEST_ASSERT_EQUAL(0, roi(100000,5,10));
-  
+void test_getdetailsprof(void) {
+  professor p1={"RGS" "Phd" 11 1};
+  professor p2={"DKB" "Phd" 31 3}
+  TEST_ASSERT_EQUAL(p1, getdetailsprof(11));
+  TEST_ASSERT_EQUAL(p2, getdetailsprof(31));
+ 
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(10, roi(100000,5,10));
+  TEST_ASSERT_EQUAL(p1, getdetailsprof(12));
 }
 
-void test_emi(void) {
-  TEST_ASSERT_EQUAL(0, emi(100000,5,10));
+void test_getdetails(void) {
+  subject s1={"AE" 1001 1 1};
+  TEST_ASSERT_EQUAL(s1, getdetails(1001));
   
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(1, emi(100000,5,10));
+  TEST_ASSERT_EQUAL(s1, getdetails(1002));
+}
+
+void test_getdetailscommittee(void) {
+  committee c1={"ESA" 10001 RGS};
+  TEST_ASSERT_EQUAL(c1, getdetailscommittee(10001));
+  
+  /* Dummy fail*/
+  TEST_ASSERT_EQUAL(c1, getdetailscommittee(10002));
 }
