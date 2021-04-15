@@ -12,3 +12,4 @@
 [![CI-Coverage](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml)
 
 
+[![Dynamic Analysis](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml)
