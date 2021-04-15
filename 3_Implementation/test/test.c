@@ -32,7 +32,7 @@ int main()
 
 /* Write all the test functions */ 
 void test_getdetailsroom(void) {
-  
+  init_rooms();
   room d1=getdetailsroom(101);
 
   TEST_ASSERT_EQUAL(1,d1.floor );
@@ -45,6 +45,7 @@ void test_getdetailsroom(void) {
 }
 
 void test_getdetailsprof(void) {
+  init_professors();
   professor p1=getdetailsprof(11);
 
   TEST_ASSERT_EQUAL_STRING("RGS",p1.name);
@@ -58,6 +59,7 @@ void test_getdetailsprof(void) {
 }
 
 void test_getdetails(void) {
+  init_subjects();
   subject s1=getdetails(1001);
 
 
@@ -71,7 +73,7 @@ void test_getdetails(void) {
 }
 
 void test_getdetailscommittee(void) {
-
+init_committee();
   committee c1 =getdetailscommittee(10001);
 
   TEST_ASSERT_EQUAL_STRING("ESA", c1.name);
