@@ -37,7 +37,7 @@ void test_getdetailsroom(void) {
   TEST_ASSERT_EQUAL(1,d1.floor );
   TEST_ASSERT_EQUAL(101, d1.room_num);
   TEST_ASSERT_EQUAL(1, d1.booked);
-  TEST_ASSERT_EQUAL_STRING("ESA", d1.booked_by);
+  TEST_ASSERT_EQUAL_STRING('ESA', d1.booked_by);
   
   /* Dummy fail*/
   //TEST_ASSERT_EQUAL(d1, getdetailsroom(401));
@@ -45,8 +45,8 @@ void test_getdetailsroom(void) {
 
 void test_getdetailsprof(void) {
   professor p1=getdetailsprof(11);
-  TEST_ASSERT_EQUAL_STRING("RGS",p1.name );
-  TEST_ASSERT_EQUAL_STRING("Phd",p1.degree );
+  TEST_ASSERT_EQUAL_STRING('RGS',p1.name );
+  TEST_ASSERT_EQUAL_STRING('Phd',p1.degree );
   TEST_ASSERT_EQUAL(11,p1.pid );
   TEST_ASSERT_EQUAL(1,p1.did);
   
@@ -59,10 +59,10 @@ void test_getdetails(void) {
   subject s1=getdetails(1001);
 
 
-  TEST_ASSERT_EQUAL_STRING("AE",s1.name );
-  TEST_ASSERT_EQUAL(1001,s1.sid );
-  TEST_ASSERT_EQUAL(1,s1.did );
-  TEST_ASSERT_EQUAL(1,s1.pid );
+  TEST_ASSERT_EQUAL_STRING('AE',s1.name);
+  TEST_ASSERT_EQUAL(1001,s1.sid);
+  TEST_ASSERT_EQUAL(1,s1.did);
+  TEST_ASSERT_EQUAL(1,s1.pid);
   
   /* Dummy fail*/
  // TEST_ASSERT_EQUAL(s1, getdetails(1002));
@@ -72,9 +72,9 @@ void test_getdetailscommittee(void) {
 
   committee c1 =getdetailscommittee(10001);
 
-  TEST_ASSERT_EQUAL_STRING("ESA", c1.name );
+  TEST_ASSERT_EQUAL_STRING('ESA', c1.name );
   TEST_ASSERT_EQUAL(10001, c1.cid);
-  TEST_ASSERT_EQUAL_STRING("RGS", c1.cpname);
+  TEST_ASSERT_EQUAL_STRING('RGS', c1.cpname);
   /* Dummy fail*/
   //TEST_ASSERT_EQUAL(c1, getdetailscommittee(10002));
 }
