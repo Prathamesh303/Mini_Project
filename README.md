@@ -13,3 +13,5 @@
 
 
 [![Dynamic Analysis](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml)
+
+[![Contribution check](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml)
