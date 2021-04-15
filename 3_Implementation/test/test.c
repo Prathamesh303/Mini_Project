@@ -32,8 +32,8 @@ int main()
 
 /* Write all the test functions */ 
 void test_getdetailsroom(void) {
-  room d1={1 101 1 "ESA"};
-  room d2={2 201 1 "ESA"};
+  room d1={1,101, 1, "ESA"};
+  room d2={2 ,201 ,1 ,"ESA"};
   TEST_ASSERT_EQUAL(d1, getdetailsroom(101));
   TEST_ASSERT_EQUAL(d2, getdetailsroom(201));
   
@@ -42,8 +42,8 @@ void test_getdetailsroom(void) {
 }
 
 void test_getdetailsprof(void) {
-  professor p1={"RGS" "Phd" 11 1};
-  professor p2={"DKB" "Phd" 31 3}
+  professor p1={"RGS" ,"Phd", 11, 1};
+  professor p2={"DKB" ,"Phd" ,31 ,3}
   TEST_ASSERT_EQUAL(p1, getdetailsprof(11));
   TEST_ASSERT_EQUAL(p2, getdetailsprof(31));
  
@@ -52,7 +52,7 @@ void test_getdetailsprof(void) {
 }
 
 void test_getdetails(void) {
-  subject s1={"AE" 1001 1 1};
+  subject s1={"AE", 1001, 1, 1};
   TEST_ASSERT_EQUAL(s1, getdetails(1001));
   
   /* Dummy fail*/
@@ -60,7 +60,7 @@ void test_getdetails(void) {
 }
 
 void test_getdetailscommittee(void) {
-  committee c1={"ESA" 10001 RGS};
+  committee c1={"ESA" ,10001 ,RGS};
   TEST_ASSERT_EQUAL(c1, getdetailscommittee(10001));
   
   /* Dummy fail*/
