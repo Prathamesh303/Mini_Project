@@ -18,7 +18,7 @@ void ReadFile(char *fileName)
 
     if (filePtr  == NULL)
     {
-        printf("Error : Unable to open %s for reading\n");
+        printf("Error : Unable to open file for reading\n");
        // return -1;
     }
 
