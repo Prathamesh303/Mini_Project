@@ -7,3 +7,6 @@
 
 
 [![Unit Testing](https://github.com/Prathamesh303/Mini_Project/actions/workflows/unitTesting.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/unitTesting.yml)
+
+
+[![CI-Coverage](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml)
