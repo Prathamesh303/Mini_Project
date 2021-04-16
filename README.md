@@ -1,20 +1,10 @@
 
 
-[![cppcheck-action](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cppcheck.yml)
+|Build|Unit Test|cppcheck|Valgrind|Coverage|Git Inspector|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| [![C/C++ CI - Build Status](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cbuild.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cbuild.yml) | [![Unit Testing](https://github.com/Prathamesh303/Mini_Project/actions/workflows/unitTesting.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/unitTesting.yml) |[![cppcheck-action](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cppcheck.yml)| [![Dynamic Analysis](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml) |[![CI-Coverage](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml) |[![Contribution check](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml)|
 
 
-[![C/C++ CI - Build Status](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cbuild.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cbuild.yml)
-
-
-[![Unit Testing](https://github.com/Prathamesh303/Mini_Project/actions/workflows/unitTesting.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/unitTesting.yml)
-
-
-[![CI-Coverage](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/coverage.yml)
-
-
-[![Dynamic Analysis](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml)
-
-[![Contribution check](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml)
 
 # College Management  System 
 
