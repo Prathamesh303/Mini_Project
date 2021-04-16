@@ -41,7 +41,7 @@ PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No of Test C
 |--|--|
 | SC1 |Displaying the Course  Details   |
 | SC2 | Displaying the Room  Details |
-| SC3 |Displaying the Comm  Details  |
+| SC3 |Displaying the Committee Details  |
 | SC4 |Unit Testing the code with various testcases |
 | SC5 |Building the all workflows In Git |
 | SC6 |Designing each module with readme files |
