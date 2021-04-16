@@ -15,48 +15,48 @@ In the college management system easy access of the details of course enrollment
 
 ## Who:
 
-*TBD*
+Intended to students  and parents who are new to college and don't know about the courses of the college.
 
 ## What:
 
-*TBD*
+It provides the Course Details  ,Committee  Details  and Room Management  Details  based on the request of user
 
 ## When:
 
-*TBD*
+When user  needs the  details  of course  or a committee  or to book a room for his project.
 
 ## Where:
 
-*TBD*
+Users can use this application on there desktop or laptop terminal.
 
 ## How:
+Users can simply  run  the program application file. 
 
-*TBD*
 
 # Detail requirements
 ## High Level Requirements:
 
 |ID|Description|Status(Implemented/Future)|
 |:--:|:--:|:--:|
-|1|Course Enrollement|Not yet implemented|
-|2|Room status|Not yet implemented|
-|3|Committe Information|Not yet implemented|
+|1|Course Enrollement|Implemented|
+|2|Room status|Implemented|
+|3|Committe Information|Implemented|
 
 
 ##  Low level Requirements:
  
 | ID | Description | Status (Implemented/Future)|
 |:--:|:--:|:--:|
-|1|Menu of supported operations|Not yet implemented|
-|2|Function for subject details|Not yet implemented|
-|3|Function for professor details|Not yet implemented|
-|4|Function for room status|Not yet implemented|
-|5|Function for committe information|Not yet implemented|
-|6|Test cases for subject details |Not yet implemented|
-|7|Test cases for professor details|Not yet implemented|
-|8|Test cases for room status|Not yet implemented|
-|9|Test cases for committe information|Not yet implemented|
-|10|Implementation testing|Not yet implemented
-=======
+|1|Menu of supported operations|Implemented|
+|2|Function for subject details|Implemented|
+|3|Function for professor details|Implemented|
+|4|Function for room status|Implemented|
+|5|Function for committe information|Implemented|
+|6|Test cases for subject details |Implemented|
+|7|Test cases for professor details|Implemented|
+|8|Test cases for room status|Implemented|
+|9|Test cases for committe information|Implemented|
+|10|Implementation testing|Implemented|
+
 
 
