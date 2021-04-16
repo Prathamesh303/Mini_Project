@@ -1,4 +1,4 @@
-# Mini_Project
+
 
 [![cppcheck-action](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/cppcheck.yml)
 
@@ -15,6 +15,14 @@
 [![Dynamic Analysis](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/dynamic_code_quality.yml)
 
 [![Contribution check](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Prathamesh303/Mini_Project/actions/workflows/gitinspector.yml)
+
+# College Management  System 
+
+It provides you with the following  functions :
+
+* Displaying  the Course Details that includes Subject and Professor  Details 
+* Displaying the Room Details if the Room that you want for your work is already  occupied than it provides  with list of room which are not occupied .
+* Displaying the Committee Details .
 
 
 ## Folder Structure
