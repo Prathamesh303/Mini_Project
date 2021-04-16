@@ -66,7 +66,7 @@ void test_getdetails(void) {
   TEST_ASSERT_EQUAL_STRING("AE",s1.name);
   TEST_ASSERT_EQUAL(1001,s1.sid);
   TEST_ASSERT_EQUAL(1,s1.did);
-  TEST_ASSERT_EQUAL(1,s1.pid);
+  TEST_ASSERT_EQUAL(11,s1.pid);
   
   /* Dummy fail*/
  // TEST_ASSERT_EQUAL(s1, getdetails(1002));
