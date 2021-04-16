@@ -4,7 +4,7 @@
 In the college management system easy access of the details of course enrollment is essential and the system is designed keeping in mind several factors. Under the course enrollment there are sub topics such as subjects so when a student selects a particular subject, details like professor conducting the course. system also tackles the problem of room management for various festival events, workshops and seminars organized by different committees. Here we maintain a central log of booked rooms, hence avoiding any overlap between different events. If the preferred room of the committee is already booked, we also provide suggestions with other available rooms on the floor
 
 ## Cost and Features
--Course  Details : The  function  will  take 3 arguments and function  will display subject  and professor  details .
+- Course  Details : The  function  will  take 3 arguments and function  will display subject  and professor  details .
 - Room Details  : The  function takes 1 arguments as input and the function will display  whether  room  is occupied  or not if occupied  than the list of room which are unoccupied  will be displayed ..
 - Committee  Details  : The function takes 1 arguments as input and the function will  display committee  details .
 
